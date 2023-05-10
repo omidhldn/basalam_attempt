@@ -1,4 +1,7 @@
-.container {
+.main-container {
+  position: sticky;
+}
+.first-container {
   height: 15vh;
   /* border: 1px solid black; */
 }

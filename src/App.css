@@ -20,7 +20,9 @@ body {
 	font-family: 'iransans';
 }
 
-
+*{
+	box-sizing: border-box;
+}
 
 .row {
 	width: 100%;
