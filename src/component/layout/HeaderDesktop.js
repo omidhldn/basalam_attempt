@@ -8,7 +8,6 @@ import { ReactComponent as Chats } from "./assets/chat.svg";
 // import { ReactComponent as Food } from "https://statics.basalam.com/public/admin/b28/01-21/ejX8wZmgLWkv1CMuEI7XxH1aaSWLOxJUCvJlQCKhYwAyLtxwJy.svg";
 
 import MegaMenu from "./MegaMenu";
-import OmidHack from "./OmidHack";
 
 const HeaderDesktop = (props) => {
   return (

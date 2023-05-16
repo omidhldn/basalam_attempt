@@ -3,11 +3,21 @@ import classes from "./MegaMenu.module.css";
 import MegaMenuItems from "./MegaMenuItems";
 
 const MegaMenu = () => {
+  const [isMouseEntered, setIsMouseEntered] = useState(false);
+
+  const mouseEnteredHandler = () => {
+    setIsMouseEntered(true);
+  };
+
+  const mouseLeaveHandler = (event) => {
+    console.log(event);
+    setIsMouseEntered(false);
+  };
   return (
     <div className={`row ${classes.container}`}>
       <div className={`col-12 `}>
         <ul>
-          <li className={classes["mega-menu"]}>
+          <li className={classes["mega-menu"]} onMouseEnter={mouseEnteredHandler}>
             <span>
               <span className={classes.bars}>
                 <span></span>
@@ -16,9 +26,6 @@ const MegaMenu = () => {
               </span>
               <span>دسته بندی ها</span>
             </span>
-            <div className={`${classes['mega-menu-items']} col-12 `}>
-              <MegaMenuItems />
-            </div>
           </li>
           <li>
             <span>نصب اپ</span>
@@ -31,6 +38,7 @@ const MegaMenu = () => {
           </li>
         </ul>
       </div>
+      {isMouseEntered && <MegaMenuItems onMouseLeave={mouseLeaveHandler}/>}
     </div>
   );
 };
