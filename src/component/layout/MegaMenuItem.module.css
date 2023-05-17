@@ -1,0 +1,21 @@
+.container {
+  display: inline-block;
+  width: 20vw;
+}
+
+.container h5 {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+
+.container ul {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  /* font-family: "iransans"; */
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+}

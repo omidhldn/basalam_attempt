@@ -1,8 +1,12 @@
 import classes from "./MegaMenuItemsGroup.module.css";
 
 const MegaMenuItemsGroup = (props) => {
+  const getGroupIdHandler = (event) => {
+    props.onGetId(event.target.dataset.id)
+  };
+
   return (
-    <div className={classes.container}>
+    <div className={classes.container} data-id={`${props.group.id}`} onMouseEnter={getGroupIdHandler}>
       <div>
         <img
           className={classes.image}

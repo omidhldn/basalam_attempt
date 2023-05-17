@@ -4,11 +4,11 @@
   font-family: 'iransans-bold';
 }
 
-.container ul {
+.container > div > ul {
   list-style-type: none;
 }
 
-.container li {
+.container > div > ul > li {
   display: inline-block;
   margin: 0 4vh;
 }

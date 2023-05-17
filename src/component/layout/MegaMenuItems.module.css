@@ -16,5 +16,17 @@
 .mega-menu-sidebar {
   /* display: flex;
   flex-direction: column; */
-  width: 25vw;
+  width: 25%;
+  display: inline-block;
+}
+
+.mega-menu-body {
+  display: inline-block;
+  width: 75%;
+}
+
+.mega-menu-body > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

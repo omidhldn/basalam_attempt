@@ -10,7 +10,7 @@ const MegaMenu = () => {
   };
 
   const mouseLeaveHandler = (event) => {
-    console.log(event);
+    // console.log(event);
     setIsMouseEntered(false);
   };
   return (
@@ -38,7 +38,8 @@ const MegaMenu = () => {
           </li>
         </ul>
       </div>
-      {isMouseEntered && <MegaMenuItems onMouseLeave={mouseLeaveHandler}/>}
+      {/* {isMouseEntered && <MegaMenuItems onMouseLeave={mouseLeaveHandler}/>} */}
+      <MegaMenuItems onMouseLeave={mouseLeaveHandler}/>
     </div>
   );
 };
