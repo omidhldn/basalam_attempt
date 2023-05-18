@@ -1,9 +1,8 @@
 .container {
-  /* width: 100%; */
-  height: 75vh;
+  height: auto;
   background-color: blue;
-  /* position: relative; */
   position: relative;
+  overflow-y: scroll;
 }
 
 .items {
@@ -13,20 +12,23 @@
   left: 0;
 }
 
+.mega-menu {
+  display: flex;
+  flex-direction: row;
+}
+
 .mega-menu-sidebar {
-  /* display: flex;
-  flex-direction: column; */
-  width: 25%;
-  display: inline-block;
+  flex-grow:1;
+  flex-shrink: 0;
 }
 
 .mega-menu-body {
-  display: inline-block;
-  width: 75%;
+  flex-grow: 4;
 }
 
 .mega-menu-body > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
